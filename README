@@ -1,0 +1,26 @@
+######################
+# ribes-c            #
+#   by Graham Neubig #
+######################
+
+This is a C++ port of the RIBES evalation metric (originally written in Python). You can find a description of the metric in the following paper:
+
+Hideki Isozaki, Tsutomu Hirao, Kevin Duh, Katsuhito Sudoh, and Hajime Tsukada,
+"Automatic Evaluation of Translation Quality for Distant Language Pairs",
+Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing (EMNLP),
+pp. 944--952 Cambridge MA, October, 2010
+-- http://aclweb.org/anthology-new/D/D10/D10-1092.pdf
+
+Please note that this program is not the official evaluation software, and any evaluations using RIBES should use the official Python package here:
+http://www.kecl.ntt.co.jp/icl/lirg/ribes/
+
+However, we have confirmed sentence-level accuracy between this package and RIBES 1.02.3 with **one exception**: In the original RIBES, full-width spaces are treated as delimiters, and in this package full-width spaces are treated as words. As a result, if your data contains full width spaces you might get slightly different results.
+
+***********
+License
+
+The software is available under the GNU General Public License.
+The original Python implementation is
+    Copyright (C) 2011  Nippon Telegraph and Telephone Corporation
+and this C++ port is
+    Copyright (C) 2012  Graham Neubig
