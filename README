@@ -17,6 +17,13 @@ http://www.kecl.ntt.co.jp/icl/lirg/ribes/
 However, we have confirmed sentence-level accuracy between this package and RIBES 1.02.3 with **one exception**: In the original RIBES, full-width spaces are treated as delimiters, and in this package full-width spaces are treated as words. As a result, if your data contains full width spaces you might get slightly different results.
 
 ***********
+Compliation
+
+ribes-c requires that Boost be installed, with at least the 
+boost_program_options library. Once the headers and library are installed,
+just run "make," and the program will be compiled.
+
+***********
 License
 
 The software is available under the GNU General Public License.
